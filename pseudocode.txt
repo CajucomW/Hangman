@@ -10,3 +10,30 @@ HANGMAN GAME
             - letter = '_'
         - hidden word = hidden word + letter + guessed/blank string
     - print the hidden word
+
+- write a function for the game itself
+    - define a limit to the number of wrong guesses
+    - while wrong guesses is more than -1
+        - invoke the previous (word to be guessed) function
+        - print number of guesses left (number of wrong guesses)
+        - print guessed letters from empty list. Here, use the '*' operator
+            to flesh out the list
+        - guess = input
+        - if input and input is not in guessed letters (not sure why twice)
+            - guessed letters append (guess)
+            - if guess is in word to guess
+                - print "Correct"
+            - else
+                - wrong guess left = wrong guess left - 1
+
+* Using the 'set' class, I can check if a specific element is contained
+    w/in a set/list
+
+        - remaining letters = set(word to guess) - set(guessed letters)
+        - if not in remaining letters
+            - print "Win!"
+            - return
+
+    - print 'lose'
+
+invoke game
