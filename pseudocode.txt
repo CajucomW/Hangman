@@ -1,0 +1,12 @@
+HANGMAN GAME
+
+- define word to guess (put in a variable)
+- create and place an empty list of guessed letters in a variable
+
+- write a function for the hidden word that needs to be guessed
+    - guessed = blank string ""
+    - for each letter in the word to guess:
+        - if the letter is not in the guessed letters:
+            - letter = '_'
+        - hidden word = hidden word + letter + guessed/blank string
+    - print the hidden word
