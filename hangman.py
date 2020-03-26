@@ -1,6 +1,6 @@
 ####        HANGMAN         ####
 
-word_to_guess = 'pseudocode'
+word_to_guess = 'formiga'
 guessed_letters = []
 
 def word():
@@ -38,5 +38,6 @@ hangman()
 
 ## TODO ##
 
+# Alert player when letter has been guessed already
 # Testing?
 
