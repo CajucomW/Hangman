@@ -5,6 +5,4 @@ A simple, python-powered, hangman game utilizing functions, conditions, and loop
 <h3>TODO:</h3>
 <h4>03/26/20</h4>
 <ul>
-    <li>write function for game itself</li>
-    <li>translate to working code</li>
     <li>testing?</li>

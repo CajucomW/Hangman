@@ -26,7 +26,8 @@ def hangman():
                 wrong_guesses -= 1
 
         letters_left = set(word_to_guess) - set(guessed_letters)
-        if not in letters_left:
+        if not letters_left:
+            print('Guessed Letters:', *guessed_letters)
             print("You WIN!")
             return
 
@@ -37,5 +38,5 @@ hangman()
 
 ## TODO ##
 
-# need to figure how to stop when word guessed successfully
+# Testing?
 
