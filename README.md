@@ -2,6 +2,12 @@
 
 A simple, python-powered, hangman game utilizing functions, conditions, and loops. I'll be trying to recreate an activity I learned from <a target="_blank" href="http://www.kickstartcoding.com">KickStart Coding</a>, which I 'pseudocoded'. I will then use the pseudocode to recreate the game. 
 
+To play the game:
+
+- clone the repo
+- in terminal run
+    python3 hangman.py
+
 <h3>TODO:</h3>
 <h4>03/26/20</h4>
 <ul>
