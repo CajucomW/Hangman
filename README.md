@@ -6,7 +6,7 @@ To play the game:
 
 - clone the repo
 - in terminal run
-    python3 hangman.py
+    <code>python3 hangman.py</code>
 
 <h3>TODO:</h3>
 <h4>03/26/20</h4>
