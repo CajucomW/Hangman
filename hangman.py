@@ -1,6 +1,6 @@
 ####        HANGMAN         ####
 
-word_to_guess = 'peudocode'
+word_to_guess = 'pseudocode'
 guessed_letters = []
 
 def word():
@@ -8,16 +8,16 @@ def word():
     for letter in word_to_guess:
         if letter not in guessed_letters:
             letter = '_'
-        hidden_word = hidden_word + letter + guessed
-    print(hidden_word)
+        guessed = guessed + letter + ''
+    print(guessed)
 
 def hangman():
     wrong_guesses = 5
-    while wrong_guesses > -1:
+    while wrong_guesses > 0:
         word()
         print('Guesses Left:', wrong_guesses)
         print('Guessed Letters:', *guessed_letters)
-        guess = input("?")
+        guess = input("Guess a Letter: ")
         if guess and guess not in guessed_letters:
             guessed_letters.append(guess)
             if guess in word_to_guess:
@@ -25,4 +25,17 @@ def hangman():
             else:
                 wrong_guesses -= 1
 
+        letters_left = set(word_to_guess) - set(guessed_letters)
+        if not in letters_left:
+            print("You WIN!")
+            return
+
+    print('Guessed Letters:', *guessed_letters)
+    print("You Lose!")
+
 hangman()
+
+## TODO ##
+
+# need to figure how to stop when word guessed successfully
+

@@ -8,7 +8,7 @@ HANGMAN GAME
     - for each letter in the word to guess:
         - if the letter is not in the guessed letters:
             - letter = '_'
-        - guessed = guessed + letter + blank string
+        - hidden word = hidden word + letter + guessed/blank string
     - print the hidden word
 
 - write a function for the game itself
